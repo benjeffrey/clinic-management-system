@@ -5,6 +5,11 @@ for Backup sake
 
 <summary><h2>steps to run. </h2></summary>
 
+---
+| ok | dak | yes |
+---
+| ok | dak | yes |
+---
 <br>
 1 - Unzip the project <br>
 2 - copy evrything and paste in htdocs or www folder (depending on WAMP or XAMPP)<br>
