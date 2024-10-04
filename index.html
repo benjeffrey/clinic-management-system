@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo-clinic.jpg">
+    <title>CAE - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <!-- heroe section -->
+
+ <!-- This example requires Tailwind CSS v2.0+ -->
+<div id="home" class="relative bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+      <!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+      <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <polygon points="50,0 100,0 50,100 0,100" />
+      </svg>
+
+      <div>
+        <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+          <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+            <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+              <div class="flex items-center justify-between w-full md:w-auto">
+                <a href="./index.html">
+                  <span class="sr-only">Workflow</span>
+                  <img class="h-32 w-auto sm:h-24" src="./img/logo-clinic.jpg">
+                </a>
+                <div class="-mr-2 flex items-center md:hidden">
+                  <button id="navbar-toggle" type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <!-- Heroicon name: outline/menu -->
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+              <a href="#home" class="font-medium text-gray-500 hover:text-gray-900">Home</a>
+
+              <a href="#services" class="font-medium text-gray-500 hover:text-gray-900">Nos Services</a>
+
+              <a href="#propos" class="font-medium text-gray-500 hover:text-gray-900">À propos</a>
+
+              <a href="./patient.php" class="text-xl font-medium text-green-600 hover:text-green-500">Rendez-vous</a>
+
+            </div>
+          </nav>
+        </div>
+
+        <!--
+          Mobile menu, show/hide based on menu open state.
+
+          Entering: "duration-150 ease-out"
+            From: "opacity-0 scale-95"
+            To: "opacity-100 scale-100"
+          Leaving: "duration-100 ease-in"
+            From: "opacity-100 scale-100"
+            To: "opacity-0 scale-95"
+        -->
+        <div id="navbar-collapse" class="hidden absolute z-10 top-0 inset-x-0 p-2 transition duration-150 ease-out transform origin-top-right md:hidden">
+          <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+            <div class="px-5 pt-4 flex items-center justify-between">
+              <div>
+                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-blue-60j0.svg" alt="">
+              </div>
+              <div class="-mr-2">
+                <button id="navbar-close" type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                  <span class="sr-only">Close main menu</span>
+                  <!-- Heroicon name: outline/x -->
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 pt-2 pb-3 space-y-1">
+              <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</a>
+
+              <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Nos Services</a>
+
+              <a href="#propos" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">À propos</a>
+              
+              <a href="./logout.php" class="block px-3 py-2 rounded-md text-base font-medium text-red-400 hover:text-red-300 hover:bg-gray-50">Espace Admin CAE</a>
+
+              <!-- <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Company</a> -->
+            </div>
+            <a href="./patient.php" class="block w-full px-5 py-3 text-center font-medium text-green-600 bg-gray-50 hover:bg-gray-100">Rendez-vous avec un docteur</a>
+          </div>
+        </div>
+      </div>
+
+      <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+        <div class="sm:text-center lg:text-left">
+          <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+            <span class="block xxl:inline">Votre santé, Notre priorité</span>
+            <span class="block text-blue-600 xl:inline">Clinique CAE</span>
+          </h1>
+          <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Prenez rendez-vous pour des consultations avec nos spécialistes et nos généralistes. disponible 24H/24, 7J/7, peu importe le problème.</p>
+          <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+            <div class="rounded-md shadow">
+              <a href="./patient.php" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10"> Prenez rendez-vous! </a>
+            </div>
+            <div class="mt-3 sm:mt-0 sm:ml-3">
+              <a href="./patient.php" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-green-200 hover:bg-green-300 md:py-4 md:text-lg md:px-10"> Réserver </a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+    <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="./img/doc.jpg" alt="">
+    <!-- <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="./img/epoh.jpg" alt=""> -->
+    <!-- <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="./img/services.jpg" alt=""> -->
+    <!-- <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="./img/logo-clinic.jpg" alt=""> -->
+  </div>
+</div>
+    <!--end heroe section -->
+
+    <!-- nos services -->
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div id="services" class="bg-white">
+      <h1 class="text-4xl py-12 text-center font-extrabold tracking-tight text-green-600 md:text-5xl lg:text-6xl">Nos Services</h1>
+      <div class="max-w-7xl mx-auto pb-16 px-4 sm:px-6 lg:pb-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
+    <div>
+      <h2 class="text-base font-semibold text-blue-600 uppercase tracking-wide">Everything you need</h2>
+      <p class="mt-2 text-3xl font-extrabold text-gray-900">La Clinique CAE de Yassa</p>
+      <p class="mt-4 text-lg text-gray-500">Grace aux progress de la médécine, de nouveaux traitements et thérapies sont dévélopés. Restez informés et discutez avec nos médécins.</p>
+    </div>
+    <div class="mt-12 lg:mt-0 lg:col-span-2">
+      <dl class="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:grid-rows-5 sm:grid-flow-col sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
+        <div class="relative">
+          <dt>
+            <!-- Heroicon name: outline/check -->
+            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Maladies Chroniques</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">Consultations et prise en charge des maladies chroniques.</dd>
+        </div>
+
+        <div class="relative">
+          <dt>
+            <!-- Heroicon name: outline/check -->
+            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Laboratoire</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">Des laboratoires et des examens d'analyse Médicales.</dd>
+        </div>
+
+        <div class="relative">
+          <dt>
+            <!-- Heroicon name: outline/check -->
+            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Chirurgie</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">Chirurgie Infantile, Générale, et Digestive à votre disposition.</dd>
+        </div>
+
+        <div class="relative">
+          <dt>
+            <!-- Heroicon name: outline/check -->
+            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Bilans</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">Des bilans de Santé complet a des prix abordable .</dd>
+        </div>
+
+        <div class="relative">
+          <dt>
+            <!-- Heroicon name: outline/check -->
+            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Consultations</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">Consultation générale et speécialisée.</dd>
+        </div>
+
+        <div class="relative">
+          <dt>
+            <!-- Heroicon name: outline/check -->
+            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Échographie</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">Échographie Abdominale, Pelvienne, obstétricale, et bien dautres...</dd>
+        </div>
+
+        <div class="relative">
+          <dt>
+            <!-- Heroicon name: outline/check -->
+            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Accouchement</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">Prise en charge de grosseses, accouchements, et suivis prenataux.</dd>
+        </div>
+
+        <div class="relative">
+          <dt>
+            <!-- Heroicon name: outline/check -->
+            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Gynecologie</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">Un service de gynécologie haut de gamme pour vos problèmes génitaux.</dd>
+        </div>
+
+        <div class="relative">
+          <dt>
+            <!-- Heroicon name: outline/check -->
+            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Service Dentair</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">Un service dentair de qualité a la disposition de tous.</dd>
+        </div>
+
+        
+
+        <!-- <div class="relative">
+          <dt>
+            //Heroicon name: outline/check 
+            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Pharmacie</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">Une pharmacie mise en place pour vos achats medicaux.</dd>
+        </div> -->
+      </dl>
+    </div>
+  </div>
+</div>
+    <!-- end nos services -->
+
+     <!-- a propos -->
+
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div id="propos" class="bg-white">
+  <!-- Header -->
+  <div class="relative pb-32 bg-gray-800">
+    <div class="absolute inset-0">
+      <!-- <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&&sat=-10" alt=""> -->
+      <img class="w-full h-full object-cover" src="./img/epoh.jpg" alt="">
+      
+      <div class="absolute inset-0 bg-gray-800 mix-blend-multiply" aria-hidden="true"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">À Propos</h1>
+      <p class="mt-6 max-w-3xl text-xl text-gray-300">CAE - Cabinet Africain d'Ethnopharmacologie. Grace aux progrès de la médécine, de nouveaux traitements et thérapies sont dévélopés. contactez nous, prenez rendez-vous  et faites vous sogner par les meilleurs.</p>
+    </div>
+  </div>
+
+  <!-- Overlapping cards -->
+  <section class="-mt-32 max-w-7xl mx-auto relative z-10 pb-32 px-4 sm:px-6 lg:px-8" aria-labelledby="contact-heading">
+    <h2 class="sr-only" id="contact-heading">Contact us</h2>
+    <div class="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
+      <div class="flex flex-col bg-white rounded-2xl shadow-2xl">
+        <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
+          <div class="absolute top-0 p-5 inline-block bg-blue-600 rounded-xl shadow-lg transform -translate-y-1/2">
+            <!-- Heroicon name: outline/phone -->
+            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-medium text-gray-900">Contact</h3>
+          <p class="mt-4 text-base text-gray-500">
+            Lieu: Face BOCOM CASA, Yassa, Douala <br>
+            Tel:<a href="tel:695631578"> 695631578 </a> <br>
+            Email: cliniquecaedeyassa@gmail.com <br>
+          </p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
+          <span class="text-base font-medium text-blue-700 hover:text-blue-600">Contact us<span aria-hidden="true"> &rarr;</span></span>
+        </div>
+      </div>
+
+      <div class="flex flex-col bg-white rounded-2xl shadow-2xl">
+        <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
+          <div class="absolute top-0 p-5 inline-block bg-blue-600 rounded-xl shadow-lg transform -translate-y-1/2">
+            <!-- Heroicon name: outline/support -->
+            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-medium text-gray-900">Infos</h3>
+          <p class="mt-4 text-base text-gray-500">CAE - Cabinet Africain d'Ethnopharmacologie basé au cameroun, Douala. </p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
+          <span class="text-base font-medium text-blue-700 hover:text-blue-600">Contact us<span aria-hidden="true"> &rarr;</span></span>
+        </div>
+      </div>
+
+      <div class="flex flex-col bg-white rounded-2xl shadow-2xl">
+        <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
+          <div class="absolute top-0 p-5 inline-block bg-blue-600 rounded-xl shadow-lg transform -translate-y-1/2">
+            <!-- Heroicon name: outline/newspaper -->
+            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-medium text-gray-900">Docs</h3>
+          <p class="mt-4 text-base text-gray-500">Clinique CAE de Yassa reconnu et approuvé par le ministaire de la santé publique.</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
+          <span class="text-base font-medium text-blue-700 hover:text-blue-600">Contact us<span aria-hidden="true"> &rarr;</span></span>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+</div>
+     <!--end a propos -->
+
+     <!-- footer -->
+
+<footer class="bg-blue-800" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="sr-only"></h2>
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+    <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+      <div class="grid grid-cols-2 gap-8 xl:col-span-2">
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Solutions</h3>
+            <ul role="list" class="mt-4 space-y-4">
+              <li>
+                <a href="#" class="text-base text-white hover:text-white"> Marketing </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-base text-white hover:text-white"> Analytics </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-base text-white hover:text-white"> Insights </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-12 md:mt-0">
+            <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Support</h3>
+            <ul role="list" class="mt-4 space-y-4">
+              <li>
+                <a href="#" class="text-base text-white hover:text-white"> Pricing </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-base text-white hover:text-white"> Documentation </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-base text-white hover:text-white"> Guides </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Company</h3>
+            <ul role="list" class="mt-4 space-y-4">
+              <li>
+                <a href="#home" class="text-base text-white hover:text-white"> Home </a>
+              </li>
+
+              <li>
+                <a href="#services" class="text-base text-white hover:text-white"> Nos Services </a>
+              </li>
+
+              <li>
+                <a href="#propos" class="text-base text-white hover:text-white"> À Propos </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-12 md:mt-0">
+            <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Legal</h3>
+            <ul role="list" class="mt-4 space-y-4">
+              <li>
+                <a href="#" class="text-base text-white hover:text-white"> Claim </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-base text-white hover:text-white"> Privacy </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-base text-white hover:text-white"> Terms </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 xl:mt-0">
+        <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Subscribe to our newsletter</h3>
+        <p class="mt-4 text-base text-white">The latest news, articles, and resources, sent to your inbox weekly.</p>
+        <form class="mt-4 sm:flex sm:max-w-md" method="post">
+          <label for="email-address" class="sr-only">Email address</label>
+          <input type="email" name="email-address" id="email-address" autocomplete="email" required class="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white focus:border-white focus:placeholder-gray-400" placeholder="Enter your email">
+          <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+            <button type="submit" class="w-full bg-green-400 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-blue-500">Subscribe</button>
+          </div>
+        </form>
+      <a href="./login.php" class="w-full mt-3 bg-red-400 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-blue-500">Espace Admin CAE</a><br>
+
+      </div>
+    </div>
+
+    
+    <div class="mt-8 border-t border-white pt-8 md:flex md:items-center md:justify-between">
+      <!-- <a href="./login.php" class="text-ml items-left border border-transparent bg-red-400 rounded-md my-3 py-2 px-3 mt-2 text-white font-medium hover:text-gray-100 md:">Espace Admin</a><br> -->
+      <div class="flex space-x-6 md:order-2">
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100063895726069&name=xhp_nt__fb__action__open_user" class="text-white hover:text-gray-300">
+          <span class="sr-only">Facebook</span>
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+          </svg>
+        </a>
+
+        <a target="_blank" href="#" class="text-white hover:text-gray-300">
+          <span class="sr-only">Instagram</span>
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+          </svg>
+        </a>
+
+        <a target="_blank" href="#" class="text-white hover:text-gray-300">
+          <span class="sr-only">Twitter</span>
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+          </svg>
+        </a>
+
+      </div>
+      <p class="mt-8 text-base text-white md:mt-0 md:order-1">&copy; 2024 CAE Service Group. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+      <!-- end footer -->
+</body>
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.getElementById('navbar-toggle');
+    const navWrapper = document.getElementById('navbar-collapse');
+    const closeButton = document.getElementById('navbar-close');
+
+    toggleButton.addEventListener('click', function () {
+        if (navWrapper.classList.contains('hidden')) {
+            // Removing hidden and adding entering classes
+            navWrapper.classList.remove('hidden', 'opacity-0', 'scale-95');
+            navWrapper.classList.add('opacity-100', 'scale-100');
+        } else {
+            // Adding leaving classes
+            navWrapper.classList.add('opacity-0', 'scale-95');
+            setTimeout(() => {
+                // Adding hidden class after animation ends
+                navWrapper.classList.add('hidden');
+            }, 150); // Duration should match the transition duration
+        }
+    });
+
+    closeButton.addEventListener('click', function () {
+        navWrapper.classList.add('opacity-0', 'scale-95');
+        setTimeout(() => {
+            navWrapper.classList.add('hidden');
+        }, 150); // Duration should match the transition duration
+    });
+});
+
+    </script>
+</html>
