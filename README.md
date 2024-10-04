@@ -1,7 +1,7 @@
-a clinique Management system with native php taylor made for Clinique CAE de Yassa
+<h2> A clinique Management system with native php taylor made for Clinique CAE de Yassa</h2>
 for Backup sake 
 ##
-steps to run. 
+<h2>steps to run. </h2>
 ##
 1 - Unzip the project
 2 - copy evrything and paste in htdocs or www folder (depending on WAMP or XAMPP)
